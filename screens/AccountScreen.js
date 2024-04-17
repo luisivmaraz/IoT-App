@@ -4,6 +4,7 @@ import { Button, Card, Avatar, ActivityIndicator} from 'react-native-paper';
 
 const AccountScreen = () => {
   const [loading, setLoading] = useState(false);
+  const [loading1, setLoading1] = useState(false);
 
   const handlesync  = () => {
     setLoading(true);
@@ -11,10 +12,11 @@ const AccountScreen = () => {
       setLoading(false);
     }, 2000);
   };
+
   const handlesync1  = () => {
-    setLoading(true);
+    setLoading1(true);
     setTimeout(() => {
-      setLoading(false);
+      setLoading1(false);
     }, 2000);
   };
 
@@ -59,7 +61,7 @@ const AccountScreen = () => {
             style={styles.button}
             disabled={loading} 
           >
-            {loading ? (
+            {loading1 ? (
               <ActivityIndicator color="white" />
             ) : (
               'Abordar'
