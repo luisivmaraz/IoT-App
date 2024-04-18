@@ -62,7 +62,7 @@ const AccountScreen = () => {
             disabled={loading} 
           >
             {loading1 ? (
-              <ActivityIndicator color="white" />
+              <ActivityIndicator color="black" />
             ) : (
               'Abordar'
             )}
